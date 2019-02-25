@@ -15,7 +15,7 @@ class CryptoEngineExArbitrage(object):
         self.engineB = EngineLoader.getEngine(self.exParams['exchangeB']['exchange'], self.exParams['exchangeB']['keyFile'])
 
     def start_engine(self):
-        print strftime('%Y%m%d%H%M%S') + ' starting Exchange Arbitrage Engine...'
+        print strftime('%d-%m-%Y %H:%M:%S') + ' starting Exchange Arbitrage Engine...'
         if self.mock:
             print '---------------------------- MOCK MODE ----------------------------'
         #Send the request asynchronously
